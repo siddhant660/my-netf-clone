@@ -133,7 +133,7 @@ details {
 }
 .hero-heading{
   width: 100%;
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   font-weight: 900;
   margin: 0 0 1rem;
 }
@@ -217,7 +217,8 @@ details {
 
 .trending-n-ul {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  gap: 3vw;
   padding: 1rem 2rem;
   list-style: none;
   
@@ -261,12 +262,11 @@ details {
 
 .join-box {
   background-image: linear-gradient(149deg,#192247 0%,#210e17 99.08%);
-  padding: 4rem  2rem;
+  padding: 1rem  ;
   border-radius: 0.5rem;
   display: flex;
-  gap: 1.5rem;
   color: white;
-  height: 100%;
+  
 }
 
 .join-detail h2 {
@@ -284,9 +284,7 @@ details {
 .join-img-container1 {
   display:flex;
   justify-content: end;
-  width: 100%;
-  height: 100%;
-  margin: 0 2rem;
+  align-items: end;
 }
 .join-img-container2 {
   display:flex;
@@ -406,16 +404,26 @@ details {
 }
 
 @media screen and (max-width: 1280px){
-  .navbar{
-    padding: 0 9.25rem;
-  }
+
   .hero-heading {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     font-weight: 900;
   }
     .join-section {
     grid-template-columns: repeat(2, 1fr);
   }
+   .poster5{
+  display:none;
+}
+.footer-section ul {
+  list-style-type: none;
+  margin-left:8.5rem;
+  display:grid;
+  grid-template-columns: auto auto auto;
+  row-gap: 1rem;
+  column-gap: 10rem;
+
+}
 }
 
 @media screen and (max-width: 960px) {
@@ -427,14 +435,44 @@ details {
        height: 1.5rem;}
 
   .hero-heading {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
     .join-section {
     grid-template-columns: 1fr;
   }
+  .poster-img{
+  width: 10rem;
+  height: 14rem;
+  border-radius: 10px;
+}
+.rank{
+  position: absolute;
+  top: 9rem;
+  left: -1.5rem;
+  font-size: 4em;
+  color: rgb(65,65,65);
+  -webkit-text-stroke: 0.1rem rgb(209, 209, 209);
+  text-shadow:0 0 1.5rem rgba(91, 91, 91, 0.5);
+}
+ .poster4{
+  display:none;
+}
+.footer-section ul {
+  list-style-type: none;
+  margin-left:8.5rem;
+  display:grid;
+  grid-template-columns: auto auto ;
+  row-gap: 1rem;
+  column-gap: 10rem;
+
+}
+
 }
 
 @media screen and (max-width: 600px) {
+    .navbar {
+    padding: 0 1.8rem;
+  } 
     .hero-heading {font-size: 2rem;
       font-weight: 700;
     }
@@ -447,4 +485,30 @@ details {
   .input-text {
       width: 100%;
     }
+  .poster-img{
+  width: 8rem;
+  height: 12rem;
+  border-radius: 10px;
+}
+  .rank{
+  position: absolute;
+  top: 9rem;
+  left: -0.8rem;
+  font-size: 2em;
+  color: rgb(65,65,65);
+  -webkit-text-stroke: 0.1rem rgb(209, 209, 209);
+  text-shadow:0 0 1.5rem rgba(91, 91, 91, 0.5);
+}
+  .poster3{
+    display: none;
+  }
+  .footer-section ul {
+  list-style-type: none;
+  margin-left:8.5rem;
+  display:grid;
+  grid-template-columns: auto;
+  row-gap: 1rem;
+  column-gap: 10rem;
+
+}
 }
